@@ -124,8 +124,8 @@ public class Valhalla {
 
     private static primitive class PrimitivePoint {
 
-        public int x;
-        public int y;
+        private final int x;
+        private final int y;
 
         public PrimitivePoint(int x, int y) {
             this.x = x;
