@@ -101,20 +101,12 @@ public class Valhalla {
 
     private static class Point {
 
-        public int x;
-        public int y;
+        private final int x;
+        private final int y;
 
         public Point(int x, int y) {
             this.x = x;
             this.y = y;
-        }
-
-        public int x() {
-            return x;
-        }
-
-        public int y() {
-            return y;
         }
 
         public Point add(Point p) {
@@ -130,14 +122,6 @@ public class Valhalla {
         public PrimitivePoint(int x, int y) {
             this.x = x;
             this.y = y;
-        }
-
-        public int getX() {
-            return this.x;
-        }
-
-        public int getY() {
-            return this.y;
         }
 
         public PrimitivePoint add(PrimitivePoint p) {
